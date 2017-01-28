@@ -1,0 +1,262 @@
+html, body{
+    margin: 0;
+    cursor: default;
+    font-family: 'Eczar', serif;
+    font-size:16px;
+    color: rgb(0, 40, 255);  
+    
+    height: 100%;
+    overflow: scroll;
+    
+}
+
+
+#container{
+    position: relative;  
+    
+    height: 100%;
+    overflow: scroll;
+    
+}
+
+#website {
+	font-family: 'Eczar', serif;
+    color: rgb(0, 40, 255);
+    
+    position: relative;
+	width: 55%;
+    max-width: 600px;
+	margin-top: 150px;
+    margin-left: 10%;
+    margin-bottom: 150px;
+    
+    padding: 150px 50px 150px 50px;
+    border: 6px solid;
+    
+    box-shadow: -10px 10px;   
+    
+}
+
+.background {
+    pointer-events: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+h1 {
+    font-size: 2em;
+    font-weight:600;
+    line-height: 120%;
+}
+
+
+
+p {
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+a, a:visited {
+    color: rgb(0, 40, 255);
+    text-decoration: none;
+    border-bottom: 2px dotted rgb(0, 40, 255);
+    margin: 0px;
+}
+
+a:hover{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+
+/*  +++++++ STYLING OF DIVS ++++++++  */
+
+#hello {
+    height: 200px;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+}
+
+#about {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
+
+/* ++++++++ PROJECT "MENU" ++++++*/
+
+#projectList {
+    width: 90%;
+    
+}
+
+
+ul {
+    padding-left: 0px;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+li {
+    -webkit-transition: color 0.1s;
+    transition: color 0.1s;
+    
+    transition-timing-function: ease;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: 400;
+    color: #ffd700;
+}
+
+li b {
+    font-family: 'Eczar', serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+li p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+	font-weight: 400;
+	line-height: 120%;
+    margin-bottom: 35px;
+}
+
+.selected {
+    color: #ffd700;
+}
+
+
+
+/* +++++++ CONTACT LINK +++++++  */
+
+#contact {
+    margin-top: 100px;
+/*    margin-bottom: 150px;*/
+    padding-top: 50px;
+    border-top: 3px;
+    border-top-style: solid;
+}
+
+#contact a {
+    color: rgb(0, 40, 255);
+    text-decoration: none;
+    border-bottom: 2px dotted #2B00F7;
+    line-height: 170%;
+}
+
+#contact a:hover{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+/* ++++++++ INDIVIDUAL PROJECT DESCRIPTIONS*/
+
+.overlay{
+    position: fixed;
+    top: 0px;
+    left: 110%;
+    right: 0px;
+    bottom: 0px; 
+    
+    width: 100%;
+    
+/*    background-color: red;*/
+    overflow: auto;
+
+    }
+
+#openProjects {
+    
+    position: absolute;
+    top: 60px;
+    
+    width: 55%;
+    max-width: 600px;
+    
+    background-color: white;
+    
+    margin-left: 13%;
+    margin-bottom: 150px;
+    
+    padding: 50px;
+    padding-bottom: 100px;
+    border: 6px solid;
+    
+    box-shadow: -10px 10px;
+
+}
+
+
+.project {
+    font-family: 'Source Sans Pro', sans-serif;
+    clear: right;
+
+    
+}
+
+.project b {
+    font-family: 'Eczar', serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.project p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+	font-weight: 400;
+	line-height: 120%;
+    margin-bottom: 35px;
+}
+
+.project img {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    
+}
+
+#close {
+    float: right;
+    text-align: right;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#close p{
+    margin: 0px;
+}
+
+#close p:hover {
+    cursor: pointer;
+    font-weight: 400;
+    color: #ffd700;
+}
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+
+
+/* +++++++Scale canvas with resize attribute to full size +++++*/
+canvas[resize] {
+	position: fixed;
+	top:0;
+	left:0;
+    width: 100%;
+    height: 100%;
+}
+
+
